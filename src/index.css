@@ -1,0 +1,73 @@
+:root{
+  --clr-green: #34d664;
+  --clr-grey-9: #222;
+}
+
+*, ::after, ::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--clr-green);
+  color: var(--clr-grey-9);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+/* contaner */
+.container{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.students{
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  &:hover{
+    transform: scale(1.02);
+  }
+}
+
+.img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+  &:hover{
+    transform: scale(1.2);
+    border-radius: 10px;
+  }
+}
+
+.clear{
+  width: 100%;
+  background-color: var(--clr-green);
+  padding: 0.3rem;
+}
+
+.remove{
+  background: rgb(232, 42, 42);
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 0.2rem 0.5rem;
+  box-shadow: 0 0 5px black;
+  color: white;
+}
+
+.info h4{
+  text-transform: capitalize;
+  font-size: large;
+}
